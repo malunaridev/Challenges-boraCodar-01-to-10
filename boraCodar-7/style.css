@@ -1,3 +1,8 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -14,9 +19,12 @@ section {
 
 #hero {
   width: 100%;
-  height: 532px;
-  padding-top: 100px;
-  align-content: space-evenly;
+  height: 53rem;
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   z-index: 1;
 }
 
@@ -29,44 +37,44 @@ section {
 
 #image2 {
   position: absolute;
-  top: 314px;
+  top: 31rem;
   right: 0;
   bottom: 0;
   z-index: -1;
 }
 
 #contentBusca {
-  width: 993px;
-  height: 128px;
+  width: 99rem;
+  height: 12rem;
   background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #eaeaea;
-  border-radius: 10px;
+  border-radius: 2rem;
 }
 
 #searchField {
-  width: 314px;
+  width: 31rem;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1.7rem;
   color: #7c7c8a;
   background: #f8f8ff;
-  padding: 12px 8px 12px 14px;
-  border-radius: 5px;
+  padding: 1.2rem .8rem 1.2rem 1.4rem;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 24px;
+  margin-right: 2.4rem;
   border: none;
 }
 
 #buttonSearch {
-  width: 169px;
-  height: 48px;
+  width: 16rem;
+  height: 5rem;
   color: #ffffff;
   background: #6246ea;
-  border-radius: 5px;
+  border-radius: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
@@ -79,7 +87,7 @@ section {
 
 h1 {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -89,48 +97,48 @@ h1 span {
 
 h2 {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 h3 {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   color: #e45858;
-  font-size: 16px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
 }
 
 main {
-  width: 1216px;
-  margin-top: 100px;
+  width: 121rem;
+  margin-top: 10rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 #mainHeader {
-  height: 48px;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
 }
 
 #buttonSelect {
-  width: 190px;
-  height: 48px;
+  width: 19rem;
+  height: 4rem;
   border: 1px solid #eaeaea;
-  border-radius: 6px;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 #buttonNavActive {
-  width: 86px;
-  height: 32px;
+  width: 8rem;
+  height: 3rem;
   color: #ffffff;
   background: #6246ea;
-  border-radius: 5px;
+  border-radius: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
@@ -142,11 +150,11 @@ main {
 }
 
 #buttonNavInactive {
-  width: 86px;
-  height: 32px;
+  width: 8rem;
+  height: 3rem;
   color: #6246ea;
   background: #ffffff;
-  border-radius: 5px;
+  border-radius: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
@@ -166,11 +174,11 @@ main {
 }
 
 #gridCards {
-  width: 384px;
-  height: 323px;
-  margin-bottom: 32px;
+  width: 38rem;
+  height: 32rem;
+  margin-bottom: 3rem;
   border: 1px solid #eaeaea;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: flex;
   align-content: space-between;
   justify-content: flex-start;
@@ -178,8 +186,8 @@ main {
 }
 
 #cardImage1 {
-  height: 153px;
-  width: 384px;
+  height: 15rem;
+  width: 38rem;
   background: linear-gradient(
       0deg,
       rgba(98, 70, 234, 0.2),
@@ -187,17 +195,17 @@ main {
     ),
     url(./assets/image1.jpg);
   background-size: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 1rem 1rem 0 0;
   background-position-y: center;
 }
 
 #cardImages {
-  height: 153px;
-  width: 384px;
+  height: 15rem;
+  width: 38rem;
   position: relative;
   background-size: cover;
   background-position: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 1rem 1rem 0 0;
 }
 
 #cardImages::after {
@@ -211,33 +219,34 @@ main {
   bottom: 0;
   z-index: 3;
   background-color: #5039c069;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .cardTitle {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
-  margin-left: 16px;
+  margin-left: 1.6rem;
 }
 
 .cardDescrip {
-  font-size: 16px;
-  line-height: 26px;
-  margin-left: 16px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-left: 1.6rem;
 }
 
 .cardLocal {
-  font-size: 16px;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  font-size: 1.6rem;
+  margin-left: 1.6rem;
+  margin-bottom: 1.6rem;
   display: flex;
   align-items: center;
 }
 
 #headerIcons {
   background: #f8f8ff;
-  padding: 10px;
+  padding: 1rem;
 }
 
 #imageLocal {
-  margin-right: 8px;
+  margin-right: .8rem;
 }
