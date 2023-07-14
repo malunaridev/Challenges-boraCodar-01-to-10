@@ -60,13 +60,17 @@ section {
   font-size: 1.7rem;
   color: #7c7c8a;
   background: #f8f8ff;
-  padding: 1.2rem .8rem 1.2rem 1.4rem;
-  border-radius: 1rem;
+  padding: 1.2rem 0.8rem 1.2rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 2.4rem;
   border: none;
+}
+
+.searchContentName,
+.searchContentLocal {
+  display: flex;
 }
 
 #buttonSearch {
@@ -75,6 +79,7 @@ section {
   color: #ffffff;
   background: #6246ea;
   border-radius: 1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
@@ -93,6 +98,7 @@ h1 {
 
 h1 span {
   color: #6246ea;
+  font-size: 4rem;
 }
 
 h2 {
@@ -128,6 +134,7 @@ main {
   height: 4rem;
   border: 1px solid #eaeaea;
   border-radius: 1rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -139,6 +146,7 @@ main {
   color: #ffffff;
   background: #6246ea;
   border-radius: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
@@ -155,6 +163,7 @@ main {
   color: #6246ea;
   background: #ffffff;
   border-radius: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
@@ -167,13 +176,14 @@ main {
 }
 
 #allCards {
+  width: 121rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-#gridCards {
+.gridCards {
   width: 38rem;
   height: 32rem;
   margin-bottom: 3rem;
@@ -199,7 +209,7 @@ main {
   background-position-y: center;
 }
 
-#cardImages {
+.cardImages {
   height: 15rem;
   width: 38rem;
   position: relative;
@@ -208,7 +218,7 @@ main {
   border-radius: 1rem 1rem 0 0;
 }
 
-#cardImages::after {
+.cardImages::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -247,6 +257,133 @@ main {
   padding: 1rem;
 }
 
-#imageLocal {
-  margin-right: .8rem;
+.imageLocal {
+  margin-right: 0.8rem;
+}
+
+@media (max-width: 1290px) {
+  :root {
+    font-size: 50%;
+  }
+  #image2 {
+    top: 23rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    font-size: 40%;
+  }
+  #image2 {
+    top: 13rem;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 35%;
+  }
+  #image2 {
+    top: 6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 60%;
+  }
+  #hero {
+    padding-top: 2rem;
+  }
+
+  #image2 {
+    top: 26rem;
+  }
+  #contentBusca {
+    width: 59rem;
+    height: 25rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #searchField {
+    width: 45rem;
+  }
+  main,
+  #allCards {
+    width: 95vw;
+  }
+  .gridCards {
+    width: 31rem;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    font-size: 50%;
+  }
+
+  #image2 {
+    top: 15rem;
+  }
+}
+
+@media (max-width: 530px) {
+  :root {
+    font-size: 50%;
+  }
+  #image2 {
+    top: 15rem;
+  }
+  .gridCards {
+    width: 38rem;
+  }
+  #allCards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 485px) {
+  :root {
+    font-size: 40%;
+  }
+  #image2 {
+    top: 5rem;
+    opacity: .6;
+  }
+  #image1 {
+    opacity: .6;
+  }
+  .gridCards {
+    width: 30rem;
+  }
+  .gridCards {
+    height: 35rem;
+  }
+  #allCards {
+    gap:1rem;
+  }
+}
+
+@media (max-width: 415px) {
+  :root {
+    font-size: 35%;
+  }
+  #image2 {
+    top: -2rem;
+  }
+  #image1 {
+    top: -4rem;
+  }
+}
+
+@media (max-width: 355px) {
+  :root {
+    font-size: 30%;
+  }
+  #image2 {
+    top: -12rem;
+  }
+  #image1 {
+    display: none;
+  }
 }
